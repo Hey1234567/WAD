@@ -9,3 +9,8 @@ Commands To Execute In Terminal:
  4. ng serve        - It is used to compile the code (Make sure you are in correct directory before executing this command)
  
  Then copy the localhost address with port and paste it in your browser (if it not redirected automatically to your default browser).
+
+
+3.After code type 
+>cd partc
+>ng serve
