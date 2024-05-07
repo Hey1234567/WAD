@@ -1,0 +1,42 @@
+1.Installation
+>Install docker
+>Install nodejs
+
+2.start
+>open docker quickstart terminal
+>type in quickstart terminal - docker --version
+
+3.Go to VS code
+>go to extension install docker extension
+>open folder which is being created - in that folder create a new folder called partb (smallcaps)
+>create a new file called - Dockerfile 
+>create another file as devika.js
+>in devika.js file write
+The file contains the following code:
+  console.log("Name: Devika Sawant");
+  console.log("Class: TE");
+  console.log("Subject: LP-II Web Application Development");
+  console.log("We are implementing Assignment-2B");
+
+>Write following code in Dockerfile (Created in Step-3) and save it.:
+  FROM node: alpine
+  COPY . /partb
+  CMD node /partb/devika.js
+
+>save both files
+
+4.Open terminal in docker 
+Open terminal in VS Code and type the following command:
+ > docker --version # We will see the version of your docker if it is installed successfully. 
+ 
+ In the same terminal in VS Code, type the following command:
+>node devika.js # It will display the contents in your file which is created in Step-2.
+
+In the same terminal in VS Code, type the following command:
+> docker build -t partb . # We will see that it is successfully built. 
+
+ In the same terminal in VS Code, type the following command:
+> docker images # You will see the docker images with REPOSITORY, TAG, IMAGE ID, CREATED (Time), SIZE.
+
+###d
+  
